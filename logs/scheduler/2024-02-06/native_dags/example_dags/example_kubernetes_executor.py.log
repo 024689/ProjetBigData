@@ -1,0 +1,435 @@
+[2024-02-06T21:28:23.701+0100] {processor.py:161} INFO - Started process (PID=23824) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:28:23.703+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:28:23.705+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:28:23.704+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:28:24.163+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:28:24.381+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:28:24.544+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:28:24.543+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:28:24.566+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:28:24.566+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:28:24.652+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.960 seconds
+[2024-02-06T21:29:48.372+0100] {processor.py:161} INFO - Started process (PID=24534) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:29:48.383+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:29:48.386+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:29:48.385+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:29:48.685+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:29:48.703+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:29:48.719+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:29:48.718+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:29:48.877+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:29:48.877+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:29:48.963+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.597 seconds
+[2024-02-06T21:31:25.555+0100] {processor.py:161} INFO - Started process (PID=24994) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:31:25.559+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:31:25.560+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:31:25.560+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:31:26.417+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:31:26.622+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:31:26.655+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:31:26.655+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:31:26.682+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:31:26.681+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:31:26.761+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.214 seconds
+[2024-02-06T21:32:39.305+0100] {processor.py:161} INFO - Started process (PID=25222) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:32:39.309+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:32:39.312+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:32:39.311+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:32:39.996+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:32:40.028+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:32:40.050+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:32:40.048+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:32:40.268+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:32:40.268+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:32:40.336+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.039 seconds
+[2024-02-06T21:40:58.815+0100] {processor.py:161} INFO - Started process (PID=27880) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:40:58.819+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:40:58.821+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:40:58.820+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:40:59.644+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:41:00.256+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:41:00.662+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:41:00.661+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:41:00.706+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:41:00.705+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:41:00.825+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 2.017 seconds
+[2024-02-06T21:41:37.261+0100] {processor.py:161} INFO - Started process (PID=28035) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:41:37.296+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:41:37.310+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:41:37.298+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:41:38.617+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:41:38.719+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:41:38.746+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:41:38.746+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:41:38.911+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:41:38.911+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:41:39.103+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.848 seconds
+[2024-02-06T21:42:25.203+0100] {processor.py:161} INFO - Started process (PID=28304) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:42:25.207+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:42:25.209+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:42:25.208+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:42:25.928+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:42:25.971+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:42:26.226+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:42:26.226+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:42:26.247+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:42:26.246+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:42:26.499+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.309 seconds
+[2024-02-06T21:43:03.992+0100] {processor.py:161} INFO - Started process (PID=28569) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:43:03.996+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:43:03.998+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:43:03.997+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:43:04.556+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:43:04.579+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:43:04.603+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:43:04.602+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:43:04.628+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:43:04.628+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:43:04.741+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.759 seconds
+[2024-02-06T21:43:35.869+0100] {processor.py:161} INFO - Started process (PID=28831) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:43:35.871+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:43:35.873+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:43:35.872+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:43:36.579+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:43:36.601+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:43:36.617+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:43:36.616+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:43:36.634+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:43:36.634+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:43:36.691+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.830 seconds
+[2024-02-06T21:44:14.284+0100] {processor.py:161} INFO - Started process (PID=28951) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:44:14.287+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:44:14.289+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:44:14.288+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:44:15.656+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:44:15.699+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:44:15.735+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:44:15.734+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:44:15.761+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:44:15.761+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:44:15.818+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.549 seconds
+[2024-02-06T21:45:30.075+0100] {processor.py:161} INFO - Started process (PID=29383) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:45:30.079+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:45:30.115+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:45:30.081+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:45:30.148+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:45:30.206+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.142 seconds
+[2024-02-06T21:54:29.381+0100] {processor.py:161} INFO - Started process (PID=31315) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:54:29.391+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:54:29.393+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:54:29.392+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:54:29.988+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:54:30.012+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:54:30.556+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:54:30.555+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:54:30.581+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:54:30.581+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:54:30.646+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.282 seconds
+[2024-02-06T21:55:59.029+0100] {processor.py:161} INFO - Started process (PID=32094) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:55:59.032+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:55:59.036+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:55:59.035+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:55:59.993+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:56:00.026+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:56:00.120+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:56:00.119+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:56:00.162+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:56:00.161+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:56:00.591+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.584 seconds
+[2024-02-06T21:56:36.393+0100] {processor.py:161} INFO - Started process (PID=32436) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:56:36.396+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:56:36.400+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:56:36.398+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:56:36.988+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:56:36.941+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py", line 36, in <module>
+    from kubernetes.client import models as k8s
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/__init__.py", line 20, in <module>
+    from . import config
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/__init__.py", line 19, in <module>
+    from .kube_config import (KUBE_CONFIG_DEFAULT_LOCATION,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/kube_config.py", line 29, in <module>
+    import google.auth.transport.requests
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/transport/requests.py", line 41, in <module>
+    from google.oauth2 import service_account
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/oauth2/service_account.py", line 77, in <module>
+    from google.auth import _service_account_info
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/_service_account_info.py", line 20, in <module>
+    from google.auth import crypt
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/__init__.py", line 41, in <module>
+    from google.auth.crypt import rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/rsa.py", line 20, in <module>
+    from google.auth.crypt import _cryptography_rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/_cryptography_rsa.py", line 33, in <module>
+    _BACKEND = backends.default_backend()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/__init__.py", line 11, in default_backend
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/backend.py", line 27, in <module>
+    from cryptography.hazmat.bindings.openssl import binding
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 167, in <module>
+    Binding.init_static_locks()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 134, in init_static_locks
+    cls._ensure_ffi_initialized()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 106, in _ensure_ffi_initialized
+    cls.lib = build_conditional_library(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 60, in build_conditional_library
+    if not getattr(lib, condition):
+AttributeError: cffi library '_openssl' has no function, constant or global variable named 'Cryptography_HAS_X509_STORE_CTX_GET_ISSUER'
+[2024-02-06T21:56:36.990+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:56:37.055+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.670 seconds
+[2024-02-06T21:57:36.406+0100] {processor.py:161} INFO - Started process (PID=32909) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:57:36.471+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:57:36.473+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:57:36.472+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:57:37.501+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:57:37.553+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:57:37.625+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:57:37.622+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:57:37.692+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:57:37.692+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:57:37.792+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.404 seconds
+[2024-02-06T21:58:00.645+0100] {processor.py:161} INFO - Started process (PID=33118) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:58:00.647+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:58:00.648+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:58:00.647+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:58:01.200+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:58:01.191+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py", line 36, in <module>
+    from kubernetes.client import models as k8s
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/__init__.py", line 20, in <module>
+    from . import config
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/__init__.py", line 19, in <module>
+    from .kube_config import (KUBE_CONFIG_DEFAULT_LOCATION,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/kube_config.py", line 29, in <module>
+    import google.auth.transport.requests
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/transport/requests.py", line 41, in <module>
+    from google.oauth2 import service_account
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/oauth2/service_account.py", line 77, in <module>
+    from google.auth import _service_account_info
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/_service_account_info.py", line 20, in <module>
+    from google.auth import crypt
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/__init__.py", line 41, in <module>
+    from google.auth.crypt import rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/rsa.py", line 20, in <module>
+    from google.auth.crypt import _cryptography_rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/_cryptography_rsa.py", line 33, in <module>
+    _BACKEND = backends.default_backend()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/__init__.py", line 11, in default_backend
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/backend.py", line 27, in <module>
+    from cryptography.hazmat.bindings.openssl import binding
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 167, in <module>
+    Binding.init_static_locks()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 134, in init_static_locks
+    cls._ensure_ffi_initialized()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 106, in _ensure_ffi_initialized
+    cls.lib = build_conditional_library(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 60, in build_conditional_library
+    if not getattr(lib, condition):
+AttributeError: cffi library '_openssl' has no function, constant or global variable named 'Cryptography_HAS_X509_STORE_CTX_GET_ISSUER'
+[2024-02-06T21:58:01.201+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:58:01.350+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.709 seconds
+[2024-02-06T21:59:39.693+0100] {processor.py:161} INFO - Started process (PID=34103) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:59:39.700+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:59:39.704+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:59:39.703+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:59:40.883+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:59:40.937+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T21:59:41.872+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:59:41.870+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T21:59:41.925+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:59:41.921+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T21:59:42.116+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 2.430 seconds
+[2024-02-06T21:59:56.686+0100] {processor.py:161} INFO - Started process (PID=34290) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:59:56.689+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T21:59:56.691+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:59:56.689+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:59:57.347+0100] {logging_mixin.py:188} INFO - [2024-02-06T21:59:57.336+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py", line 36, in <module>
+    from kubernetes.client import models as k8s
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/__init__.py", line 20, in <module>
+    from . import config
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/__init__.py", line 19, in <module>
+    from .kube_config import (KUBE_CONFIG_DEFAULT_LOCATION,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/kube_config.py", line 29, in <module>
+    import google.auth.transport.requests
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/transport/requests.py", line 41, in <module>
+    from google.oauth2 import service_account
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/oauth2/service_account.py", line 77, in <module>
+    from google.auth import _service_account_info
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/_service_account_info.py", line 20, in <module>
+    from google.auth import crypt
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/__init__.py", line 41, in <module>
+    from google.auth.crypt import rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/rsa.py", line 20, in <module>
+    from google.auth.crypt import _cryptography_rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/_cryptography_rsa.py", line 33, in <module>
+    _BACKEND = backends.default_backend()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/__init__.py", line 11, in default_backend
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/backend.py", line 27, in <module>
+    from cryptography.hazmat.bindings.openssl import binding
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 167, in <module>
+    Binding.init_static_locks()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 134, in init_static_locks
+    cls._ensure_ffi_initialized()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 106, in _ensure_ffi_initialized
+    cls.lib = build_conditional_library(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 60, in build_conditional_library
+    if not getattr(lib, condition):
+AttributeError: cffi library '_openssl' has no function, constant or global variable named 'Cryptography_HAS_X509_STORE_CTX_GET_ISSUER'
+[2024-02-06T21:59:57.350+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T21:59:57.443+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.763 seconds
+[2024-02-06T22:01:27.897+0100] {processor.py:161} INFO - Started process (PID=34877) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:01:27.900+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:01:27.902+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:01:27.901+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:01:28.586+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:01:28.609+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:01:28.642+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:01:28.641+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:01:28.896+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:01:28.896+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:01:28.967+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.079 seconds
+[2024-02-06T22:01:30.720+0100] {processor.py:161} INFO - Started process (PID=34883) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:01:30.722+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:01:30.723+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:01:30.722+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:01:31.451+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:01:31.442+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py", line 36, in <module>
+    from kubernetes.client import models as k8s
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/__init__.py", line 20, in <module>
+    from . import config
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/__init__.py", line 19, in <module>
+    from .kube_config import (KUBE_CONFIG_DEFAULT_LOCATION,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/kube_config.py", line 29, in <module>
+    import google.auth.transport.requests
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/transport/requests.py", line 41, in <module>
+    from google.oauth2 import service_account
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/oauth2/service_account.py", line 77, in <module>
+    from google.auth import _service_account_info
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/_service_account_info.py", line 20, in <module>
+    from google.auth import crypt
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/__init__.py", line 41, in <module>
+    from google.auth.crypt import rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/rsa.py", line 20, in <module>
+    from google.auth.crypt import _cryptography_rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/_cryptography_rsa.py", line 33, in <module>
+    _BACKEND = backends.default_backend()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/__init__.py", line 11, in default_backend
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/backend.py", line 27, in <module>
+    from cryptography.hazmat.bindings.openssl import binding
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 167, in <module>
+    Binding.init_static_locks()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 134, in init_static_locks
+    cls._ensure_ffi_initialized()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 106, in _ensure_ffi_initialized
+    cls.lib = build_conditional_library(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 60, in build_conditional_library
+    if not getattr(lib, condition):
+AttributeError: cffi library '_openssl' has no function, constant or global variable named 'Cryptography_HAS_X509_STORE_CTX_GET_ISSUER'
+[2024-02-06T22:01:31.452+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:01:31.506+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.819 seconds
+[2024-02-06T22:02:58.125+0100] {processor.py:161} INFO - Started process (PID=35701) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:02:58.129+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:02:58.131+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:02:58.130+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:02:58.879+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:02:58.918+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:02:58.950+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:02:58.950+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:02:58.982+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:02:58.982+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:02:59.063+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.948 seconds
+[2024-02-06T22:03:00.962+0100] {processor.py:161} INFO - Started process (PID=35711) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:03:00.984+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:03:00.987+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:03:00.985+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:03:01.606+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:03:01.598+0100] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py", line 36, in <module>
+    from kubernetes.client import models as k8s
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/__init__.py", line 20, in <module>
+    from . import config
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/__init__.py", line 19, in <module>
+    from .kube_config import (KUBE_CONFIG_DEFAULT_LOCATION,
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/kubernetes/config/kube_config.py", line 29, in <module>
+    import google.auth.transport.requests
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/transport/requests.py", line 41, in <module>
+    from google.oauth2 import service_account
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/oauth2/service_account.py", line 77, in <module>
+    from google.auth import _service_account_info
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/_service_account_info.py", line 20, in <module>
+    from google.auth import crypt
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/__init__.py", line 41, in <module>
+    from google.auth.crypt import rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/rsa.py", line 20, in <module>
+    from google.auth.crypt import _cryptography_rsa
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/google/auth/crypt/_cryptography_rsa.py", line 33, in <module>
+    _BACKEND = backends.default_backend()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/__init__.py", line 11, in default_backend
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/__init__.py", line 7, in <module>
+    from cryptography.hazmat.backends.openssl.backend import backend
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/backends/openssl/backend.py", line 27, in <module>
+    from cryptography.hazmat.bindings.openssl import binding
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 167, in <module>
+    Binding.init_static_locks()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 134, in init_static_locks
+    cls._ensure_ffi_initialized()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 106, in _ensure_ffi_initialized
+    cls.lib = build_conditional_library(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/cryptography/hazmat/bindings/openssl/binding.py", line 60, in build_conditional_library
+    if not getattr(lib, condition):
+AttributeError: cffi library '_openssl' has no function, constant or global variable named 'Cryptography_HAS_X509_STORE_CTX_GET_ISSUER'
+[2024-02-06T22:03:01.608+0100] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:03:01.743+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.790 seconds
+[2024-02-06T22:06:45.693+0100] {processor.py:161} INFO - Started process (PID=37691) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:06:45.703+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:06:45.708+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:06:45.705+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:06:46.196+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:06:46.214+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:06:46.543+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:06:46.542+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:06:46.555+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:06:46.555+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:06:46.711+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.025 seconds
+[2024-02-06T22:11:09.681+0100] {processor.py:161} INFO - Started process (PID=39306) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:11:09.684+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:11:09.686+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:11:09.685+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:11:10.366+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:11:10.396+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:11:10.857+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:11:10.856+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:11:10.872+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:11:10.872+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:11:10.928+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.253 seconds
+[2024-02-06T22:13:32.758+0100] {processor.py:161} INFO - Started process (PID=40265) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:13:32.804+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:13:32.812+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:13:32.811+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:13:33.597+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:13:33.617+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:13:33.928+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:13:33.928+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:13:33.950+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:13:33.950+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:13:34.155+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 1.410 seconds
+[2024-02-06T22:15:02.029+0100] {processor.py:161} INFO - Started process (PID=41229) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:15:02.040+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:15:02.043+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:15:02.042+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:15:03.643+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:15:03.700+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:15:03.766+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:15:03.765+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:15:03.809+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:15:03.808+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:15:05.894+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 3.874 seconds
+[2024-02-06T22:26:39.871+0100] {processor.py:161} INFO - Started process (PID=49479) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:26:39.875+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:26:39.879+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:26:39.878+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:26:41.606+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:26:41.736+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:26:41.785+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:26:41.784+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:26:41.818+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:26:41.817+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:26:41.978+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 2.116 seconds
+[2024-02-06T22:28:31.188+0100] {processor.py:161} INFO - Started process (PID=50459) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:28:31.194+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:28:31.197+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:28:31.196+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:28:35.157+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:28:35.718+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:28:37.721+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:28:37.719+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:28:37.748+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:28:37.747+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:28:37.876+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 6.710 seconds
+[2024-02-06T22:35:47.870+0100] {processor.py:161} INFO - Started process (PID=55824) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:35:47.909+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T22:35:47.922+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:35:47.916+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:35:50.023+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T22:35:50.090+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T22:35:50.118+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:35:50.116+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T22:35:50.208+0100] {logging_mixin.py:188} INFO - [2024-02-06T22:35:50.207+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T22:35:50.276+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 2.425 seconds
+[2024-02-06T23:14:43.870+0100] {processor.py:161} INFO - Started process (PID=64342) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T23:14:43.892+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T23:14:43.908+0100] {logging_mixin.py:188} INFO - [2024-02-06T23:14:43.902+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T23:14:46.723+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T23:14:46.946+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T23:14:49.298+0100] {logging_mixin.py:188} INFO - [2024-02-06T23:14:49.297+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T23:14:49.382+0100] {logging_mixin.py:188} INFO - [2024-02-06T23:14:49.381+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T23:14:49.558+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 5.973 seconds
+[2024-02-06T23:30:14.245+0100] {processor.py:161} INFO - Started process (PID=72884) to work on /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T23:30:14.295+0100] {processor.py:830} INFO - Processing file /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-06T23:30:14.298+0100] {logging_mixin.py:188} INFO - [2024-02-06T23:30:14.297+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T23:30:16.557+0100] {processor.py:840} INFO - DAG(s) 'example_kubernetes_executor' retrieved from /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-06T23:30:16.712+0100] {logging_mixin.py:188} WARNING - /home/ubuntu/.local/lib/python3.10/site-packages/airflow/serialization/serialized_objects.py:1564 DeprecationWarning: This module is deprecated. The `cncf.kubernetes` provider before version 7.4.0 uses this module - you should migrate to a newer version of `cncf.kubernetes` to get rid of this warning. If you import the module via `airflow.kubernetes` import, please use `cncf.kubernetes' provider 7.4.0+ and switch all your imports to use `apache.airflow.providers.cncf.kubernetes` to get rid of the warning.
+[2024-02-06T23:30:17.751+0100] {logging_mixin.py:188} INFO - [2024-02-06T23:30:17.749+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-06T23:30:17.882+0100] {logging_mixin.py:188} INFO - [2024-02-06T23:30:17.873+0100] {dag.py:3823} INFO - Setting next_dagrun for example_kubernetes_executor to None, run_after=None
+[2024-02-06T23:30:18.236+0100] {processor.py:183} INFO - Processing /home/ubuntu/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py took 4.005 seconds

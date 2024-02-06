@@ -1,0 +1,18 @@
+[2024-02-06T22:29:59.265+0100] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Competition_dag.match_task manual__2024-02-06T21:28:59.446163+00:00 [queued]>
+[2024-02-06T22:29:59.288+0100] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Competition_dag.match_task manual__2024-02-06T21:28:59.446163+00:00 [queued]>
+[2024-02-06T22:29:59.289+0100] {taskinstance.py:2170} INFO - Starting attempt 1 of 6
+[2024-02-06T22:29:59.401+0100] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): match_task> on 2024-02-06 21:28:59.446163+00:00
+[2024-02-06T22:29:59.420+0100] {standard_task_runner.py:60} INFO - Started process 51520 to run task
+[2024-02-06T22:29:59.427+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Competition_dag', 'match_task', 'manual__2024-02-06T21:28:59.446163+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/datalake_dag.py', '--cfg-path', '/tmp/tmphrzfl_tq']
+[2024-02-06T22:29:59.431+0100] {standard_task_runner.py:88} INFO - Job 30: Subtask match_task
+[2024-02-06T22:29:59.617+0100] {task_command.py:423} INFO - Running <TaskInstance: Competition_dag.match_task manual__2024-02-06T21:28:59.446163+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-02-06T22:29:59.857+0100] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NOUMEN_Frech_Warren' AIRFLOW_CTX_DAG_ID='Competition_dag' AIRFLOW_CTX_TASK_ID='match_task' AIRFLOW_CTX_EXECUTION_DATE='2024-02-06T21:28:59.446163+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-06T21:28:59.446163+00:00'
+[2024-02-06T22:29:59.861+0100] {logging_mixin.py:188} INFO - helloWord
+[2024-02-06T22:30:00.634+0100] {logging_mixin.py:188} INFO - Data fetch successfully
+[2024-02-06T22:30:00.646+0100] {client.py:192} INFO - Instantiated <InsecureClient(url='http://localhost:9870')>.
+[2024-02-06T22:30:00.649+0100] {client.py:496} INFO - Writing to '/datalake/raw/2024-02-06'.
+[2024-02-06T22:30:00.667+0100] {logging_mixin.py:188} INFO - Some error occurred during writing to hdfs: HTTPConnectionPool(host='localhost', port=9870): Max retries exceeded with url: /webhdfs/v1/datalake/raw/2024-02-06?user.name=ubuntu&overwrite=True&op=CREATE (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f52d83e2440>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-02-06T22:30:00.675+0100] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-06T22:30:00.722+0100] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Competition_dag, task_id=match_task, execution_date=20240206T212859, start_date=20240206T212959, end_date=20240206T213000
+[2024-02-06T22:30:00.812+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-06T22:30:00.902+0100] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

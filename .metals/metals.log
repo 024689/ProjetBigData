@@ -1,0 +1,65 @@
+2024.02.06 20:57:29 INFO  Started: Metals version 1.2.0 in folders '/home/ubuntu/airflow' for client Visual Studio Code 1.86.0.
+2024.02.06 20:57:29 INFO  time: initialize in 0.21s
+2024.02.06 20:57:40 WARN  Build server is not auto-connectable.
+2024.02.06 20:57:40 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/CombinedData.scala
+Feb 06, 2024 8:57:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2024.02.06 20:58:03 INFO  no build target found for /home/ubuntu/airflow/scala/src/main/scala/CombinedData.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.06 20:58:18 INFO  time: code lens generation in 29s
+2024.02.06 21:00:22 INFO  time: code lens generation in 1.57s
+2024.02.06 21:01:43 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/JobFormatted.scala
+2024.02.06 21:02:13 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+2024.02.06 21:02:19 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+2024.02.06 21:02:24 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+2024.02.06 21:02:28 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/CombinedData.scala
+2024.02.06 22:41:13 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+2024.02.06 22:41:27 INFO  time: code lens generation in 8.05s
+2024.02.06 22:41:45 INFO  time: code lens generation in 1.4s
+2024.02.06 22:41:47 INFO  time: code lens generation in 1.83s
+2024.02.06 22:41:56 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+2024.02.06 22:42:20 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/CombinedData.scala
+2024.02.06 22:43:35 INFO  time: code lens generation in 1.01s
+2024.02.06 22:44:21 INFO  time: code lens generation in 9.46s
+2024.02.06 22:44:21 INFO  time: code lens generation in 3.54s
+2024.02.06 22:44:21 INFO  time: code lens generation in 2.79s
+2024.02.06 22:44:21 INFO  time: code lens generation in 7.16s
+2024.02.06 22:44:21 INFO  time: code lens generation in 8.29s
+Feb 06, 2024 10:44:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 277
+Feb 06, 2024 10:44:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 286
+Feb 06, 2024 10:44:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 294
+2024.02.06 22:44:32 INFO  time: code lens generation in 9.98s
+2024.02.06 22:44:32 INFO  time: code lens generation in 2.17s
+2024.02.06 22:44:32 INFO  time: code lens generation in 6.11s
+2024.02.06 22:44:32 INFO  time: code lens generation in 7.31s
+2024.02.06 22:44:32 INFO  time: code lens generation in 3.71s
+2024.02.06 22:44:32 INFO  time: code lens generation in 5.44s
+2024.02.06 22:44:56 INFO  time: code lens generation in 1.54s
+Feb 06, 2024 10:45:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 495
+Feb 06, 2024 10:45:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 511
+Feb 06, 2024 10:46:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 541
+Feb 06, 2024 10:46:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 578
+Feb 06, 2024 10:46:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 593
+Feb 06, 2024 10:46:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 596
+2024.02.06 22:47:08 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+Feb 06, 2024 10:58:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 777
+2024.02.06 23:00:19 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+2024.02.06 23:05:36 INFO  time: code lens generation in 1.63s
+2024.02.06 23:05:43 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala
+2024.02.06 23:05:47 INFO  time: code lens generation in 5.62s
+2024.02.06 23:09:53 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/CombinedData.scala
+Feb 06, 2024 11:10:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1000
+Feb 06, 2024 11:10:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1001
+2024.02.06 23:10:17 INFO  time: code lens generation in 1.13s
+2024.02.06 23:10:23 WARN  no build target for: /home/ubuntu/airflow/scala/src/main/scala/FormattedData.scala

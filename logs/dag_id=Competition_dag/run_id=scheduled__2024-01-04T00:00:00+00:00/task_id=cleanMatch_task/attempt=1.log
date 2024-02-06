@@ -1,0 +1,99 @@
+[2024-02-06T22:20:37.495+0100] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2024-02-06T22:20:37.510+0100] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2024-02-06T22:20:37.511+0100] {taskinstance.py:2170} INFO - Starting attempt 1 of 6
+[2024-02-06T22:20:37.591+0100] {taskinstance.py:2191} INFO - Executing <Task(SparkSubmitOperator): cleanMatch_task> on 2024-01-04 00:00:00+00:00
+[2024-02-06T22:20:37.614+0100] {standard_task_runner.py:60} INFO - Started process 45010 to run task
+[2024-02-06T22:20:37.634+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Competition_dag', 'cleanMatch_task', 'scheduled__2024-01-04T00:00:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/datalake_dag.py', '--cfg-path', '/tmp/tmp4bmc9id1']
+[2024-02-06T22:20:37.666+0100] {standard_task_runner.py:88} INFO - Job 36: Subtask cleanMatch_task
+[2024-02-06T22:20:37.968+0100] {task_command.py:423} INFO - Running <TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-04T00:00:00+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-02-06T22:20:38.249+0100] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NOUMEN_Frech_Warren' AIRFLOW_CTX_DAG_ID='Competition_dag' AIRFLOW_CTX_TASK_ID='cleanMatch_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-04T00:00:00+00:00'
+[2024-02-06T22:20:38.264+0100] {base.py:83} INFO - Using connection ID 'spark_default' for task execution.
+[2024-02-06T22:20:38.267+0100] {spark_submit.py:401} INFO - Spark-Submit cmd: spark-submit --master local[*] --conf spark.airflow.execution_date=2024-01-04 --name arrow-spark --class FormattedData --queue root.default --deploy-mode client /home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar
+[2024-02-06T22:20:43.086+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:43 WARN Utils: Your hostname, ubuntu resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
+[2024-02-06T22:20:43.094+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:43 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-02-06T22:20:44.898+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:44 INFO SparkContext: Running Spark version 3.3.4
+[2024-02-06T22:20:45.233+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-02-06T22:20:45.657+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 INFO ResourceUtils: ==============================================================
+[2024-02-06T22:20:45.659+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2024-02-06T22:20:45.661+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 INFO ResourceUtils: ==============================================================
+[2024-02-06T22:20:45.663+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 INFO SparkContext: Submitted application: JobFormatted
+[2024-02-06T22:20:45.791+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2024-02-06T22:20:45.843+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 INFO ResourceProfile: Limiting resource is cpu
+[2024-02-06T22:20:45.848+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:45 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2024-02-06T22:20:46.081+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:46 INFO SecurityManager: Changing view acls to: ubuntu
+[2024-02-06T22:20:46.083+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:46 INFO SecurityManager: Changing modify acls to: ubuntu
+[2024-02-06T22:20:46.084+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:46 INFO SecurityManager: Changing view acls groups to:
+[2024-02-06T22:20:46.085+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:46 INFO SecurityManager: Changing modify acls groups to:
+[2024-02-06T22:20:46.088+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ubuntu); groups with view permissions: Set(); users  with modify permissions: Set(ubuntu); groups with modify permissions: Set()
+[2024-02-06T22:20:47.335+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:47 INFO Utils: Successfully started service 'sparkDriver' on port 43297.
+[2024-02-06T22:20:47.517+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:47 INFO SparkEnv: Registering MapOutputTracker
+[2024-02-06T22:20:47.684+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:47 INFO SparkEnv: Registering BlockManagerMaster
+[2024-02-06T22:20:47.792+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:47 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2024-02-06T22:20:47.793+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:47 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2024-02-06T22:20:47.814+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:47 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2024-02-06T22:20:48.209+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:48 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-dc5322a4-76bf-44fb-81c0-0b16c879fe89
+[2024-02-06T22:20:48.287+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:48 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2024-02-06T22:20:48.364+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:48 INFO SparkEnv: Registering OutputCommitCoordinator
+[2024-02-06T22:20:49.651+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:49 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2024-02-06T22:20:49.794+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:49 INFO SparkContext: Added JAR file:/home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar at spark://10.0.2.15:43297/jars/scala_2.13-0.1.0.jar with timestamp 1707254444865
+[2024-02-06T22:20:50.252+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:50 INFO Executor: Starting executor ID driver on host 10.0.2.15
+[2024-02-06T22:20:50.283+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:50 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2024-02-06T22:20:50.332+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:50 INFO Executor: Fetching spark://10.0.2.15:43297/jars/scala_2.13-0.1.0.jar with timestamp 1707254444865
+[2024-02-06T22:20:50.626+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:50 INFO TransportClientFactory: Successfully created connection to /10.0.2.15:43297 after 202 ms (0 ms spent in bootstraps)
+[2024-02-06T22:20:50.661+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:50 INFO Utils: Fetching spark://10.0.2.15:43297/jars/scala_2.13-0.1.0.jar to /tmp/spark-f4f2c9c1-8eb2-4909-a72c-8088f5a35211/userFiles-bb5715fb-6f91-489f-b6eb-980e4ae6b68f/fetchFileTemp12614230811916195299.tmp
+[2024-02-06T22:20:51.324+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO Executor: Adding file:/tmp/spark-f4f2c9c1-8eb2-4909-a72c-8088f5a35211/userFiles-bb5715fb-6f91-489f-b6eb-980e4ae6b68f/scala_2.13-0.1.0.jar to class loader
+[2024-02-06T22:20:51.383+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39737.
+[2024-02-06T22:20:51.385+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO NettyBlockTransferService: Server created on 10.0.2.15:39737
+[2024-02-06T22:20:51.402+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2024-02-06T22:20:51.447+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.2.15, 39737, None)
+[2024-02-06T22:20:51.536+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.2.15:39737 with 434.4 MiB RAM, BlockManagerId(driver, 10.0.2.15, 39737, None)
+[2024-02-06T22:20:51.566+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.2.15, 39737, None)
+[2024-02-06T22:20:51.635+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:51 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.2.15, 39737, None)
+[2024-02-06T22:20:54.910+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:54 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2024-02-06T22:20:54.936+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:54 INFO SharedState: Warehouse path is 'file:/home/ubuntu/airflow/spark-warehouse'.
+[2024-02-06T22:20:58.348+0100] {spark_submit.py:571} INFO - Exception in thread "main" java.lang.NoClassDefFoundError: scala/collection/StringOps$
+[2024-02-06T22:20:58.349+0100] {spark_submit.py:571} INFO - at FormattedData$.main(FormattedData.scala:14)
+[2024-02-06T22:20:58.350+0100] {spark_submit.py:571} INFO - at FormattedData.main(FormattedData.scala)
+[2024-02-06T22:20:58.350+0100] {spark_submit.py:571} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2024-02-06T22:20:58.351+0100] {spark_submit.py:571} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2024-02-06T22:20:58.352+0100] {spark_submit.py:571} INFO - at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2024-02-06T22:20:58.352+0100] {spark_submit.py:571} INFO - at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[2024-02-06T22:20:58.353+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+[2024-02-06T22:20:58.353+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:984)
+[2024-02-06T22:20:58.354+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:191)
+[2024-02-06T22:20:58.354+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:214)
+[2024-02-06T22:20:58.354+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:90)
+[2024-02-06T22:20:58.355+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1072)
+[2024-02-06T22:20:58.355+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1081)
+[2024-02-06T22:20:58.355+0100] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2024-02-06T22:20:58.355+0100] {spark_submit.py:571} INFO - Caused by: java.lang.ClassNotFoundException: scala.collection.StringOps$
+[2024-02-06T22:20:58.356+0100] {spark_submit.py:571} INFO - at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:476)
+[2024-02-06T22:20:58.356+0100] {spark_submit.py:571} INFO - at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:594)
+[2024-02-06T22:20:58.356+0100] {spark_submit.py:571} INFO - at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+[2024-02-06T22:20:58.357+0100] {spark_submit.py:571} INFO - ... 14 more
+[2024-02-06T22:20:58.389+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO SparkContext: Invoking stop() from shutdown hook
+[2024-02-06T22:20:58.469+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO SparkUI: Stopped Spark web UI at http://10.0.2.15:4040
+[2024-02-06T22:20:58.535+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2024-02-06T22:20:58.675+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO MemoryStore: MemoryStore cleared
+[2024-02-06T22:20:58.676+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO BlockManager: BlockManager stopped
+[2024-02-06T22:20:58.731+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2024-02-06T22:20:58.765+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2024-02-06T22:20:58.860+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO SparkContext: Successfully stopped SparkContext
+[2024-02-06T22:20:58.864+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO ShutdownHookManager: Shutdown hook called
+[2024-02-06T22:20:58.870+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO ShutdownHookManager: Deleting directory /tmp/spark-6d5eb55f-02db-4a12-8508-a8e24ce67128
+[2024-02-06T22:20:58.892+0100] {spark_submit.py:571} INFO - 24/02/06 22:20:58 INFO ShutdownHookManager: Deleting directory /tmp/spark-f4f2c9c1-8eb2-4909-a72c-8088f5a35211
+[2024-02-06T22:20:59.029+0100] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 174, in execute
+    self._hook.submit(self._application)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 502, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master local[*] --conf spark.airflow.execution_date=2024-01-04 --name arrow-spark --class FormattedData --queue root.default --deploy-mode client /home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar. Error code is: 1.
+[2024-02-06T22:20:59.037+0100] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Competition_dag, task_id=cleanMatch_task, execution_date=20240104T000000, start_date=20240206T212037, end_date=20240206T212059
+[2024-02-06T22:20:59.080+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 36 for task cleanMatch_task (Cannot execute: spark-submit --master local[*] --conf spark.airflow.execution_date=2024-01-04 --name arrow-spark --class FormattedData --queue root.default --deploy-mode client /home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar. Error code is: 1.; 45010)
+[2024-02-06T22:20:59.135+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-06T22:20:59.185+0100] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-02-06T23:26:26.934+0100] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-04T00:00:00+00:00 [skipped]>, dependency 'Task Instance State' FAILED: Task is in the 'skipped' state.
+[2024-02-06T23:26:26.959+0100] {local_task_job_runner.py:160} INFO - Task is not able to be run

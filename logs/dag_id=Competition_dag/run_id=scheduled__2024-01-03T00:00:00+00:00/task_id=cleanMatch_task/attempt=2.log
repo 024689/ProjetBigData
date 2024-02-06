@@ -1,0 +1,2 @@
+[2024-02-06T23:25:57.715+0100] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-03T00:00:00+00:00 [skipped]>, dependency 'Task Instance State' FAILED: Task is in the 'skipped' state.
+[2024-02-06T23:25:57.758+0100] {local_task_job_runner.py:160} INFO - Task is not able to be run

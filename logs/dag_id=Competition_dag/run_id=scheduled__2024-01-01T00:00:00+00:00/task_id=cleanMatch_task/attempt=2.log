@@ -1,0 +1,239 @@
+[2024-02-06T22:24:29.823+0100] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-01T00:00:00+00:00 [skipped]>, dependency 'Task Instance State' FAILED: Task is in the 'skipped' state.
+[2024-02-06T22:24:29.825+0100] {local_task_job_runner.py:160} INFO - Task is not able to be run
+[2024-02-06T23:18:42.008+0100] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-02-06T23:18:42.026+0100] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-02-06T23:18:42.028+0100] {taskinstance.py:2170} INFO - Starting attempt 2 of 6
+[2024-02-06T23:18:42.456+0100] {taskinstance.py:2191} INFO - Executing <Task(SparkSubmitOperator): cleanMatch_task> on 2024-01-01 00:00:00+00:00
+[2024-02-06T23:18:42.514+0100] {standard_task_runner.py:60} INFO - Started process 67167 to run task
+[2024-02-06T23:18:42.561+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Competition_dag', 'cleanMatch_task', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/datalake_dag.py', '--cfg-path', '/tmp/tmpke60r_zs']
+[2024-02-06T23:18:42.596+0100] {standard_task_runner.py:88} INFO - Job 40: Subtask cleanMatch_task
+[2024-02-06T23:18:42.988+0100] {task_command.py:423} INFO - Running <TaskInstance: Competition_dag.cleanMatch_task scheduled__2024-01-01T00:00:00+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-02-06T23:18:43.522+0100] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NOUMEN_Frech_Warren' AIRFLOW_CTX_DAG_ID='Competition_dag' AIRFLOW_CTX_TASK_ID='cleanMatch_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-02-06T23:18:43.601+0100] {base.py:83} INFO - Using connection ID 'spark_default' for task execution.
+[2024-02-06T23:18:43.607+0100] {spark_submit.py:401} INFO - Spark-Submit cmd: spark-submit --master local[*] --conf spark.airflow.execution_date=2024-01-01 --name arrow-spark --class FormattedData --queue root.default --deploy-mode client /home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar
+[2024-02-06T23:19:17.452+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:17 WARN Utils: Your hostname, ubuntu resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
+[2024-02-06T23:19:17.627+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:17 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-02-06T23:19:29.806+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:29 INFO SparkContext: Running Spark version 3.3.4
+[2024-02-06T23:19:33.049+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-02-06T23:19:37.000+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:36 INFO ResourceUtils: ==============================================================
+[2024-02-06T23:19:37.079+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:36 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2024-02-06T23:19:37.089+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:37 INFO ResourceUtils: ==============================================================
+[2024-02-06T23:19:37.092+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:37 INFO SparkContext: Submitted application: JobFormatted
+[2024-02-06T23:19:37.696+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:37 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2024-02-06T23:19:37.838+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:37 INFO ResourceProfile: Limiting resource is cpu
+[2024-02-06T23:19:37.884+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:37 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2024-02-06T23:19:42.833+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:42 INFO SecurityManager: Changing view acls to: ubuntu
+[2024-02-06T23:19:42.935+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:42 INFO SecurityManager: Changing modify acls to: ubuntu
+[2024-02-06T23:19:42.936+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:42 INFO SecurityManager: Changing view acls groups to:
+[2024-02-06T23:19:42.937+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:42 INFO SecurityManager: Changing modify acls groups to:
+[2024-02-06T23:19:42.938+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ubuntu); groups with view permissions: Set(); users  with modify permissions: Set(ubuntu); groups with modify permissions: Set()
+[2024-02-06T23:19:53.232+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:53 INFO Utils: Successfully started service 'sparkDriver' on port 39901.
+[2024-02-06T23:19:54.507+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:54 INFO SparkEnv: Registering MapOutputTracker
+[2024-02-06T23:19:55.858+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:55 INFO SparkEnv: Registering BlockManagerMaster
+[2024-02-06T23:19:56.326+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:56 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2024-02-06T23:19:56.354+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:56 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2024-02-06T23:19:56.820+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:56 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2024-02-06T23:19:57.694+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:57 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-afada470-1814-4f19-8d7e-e5cce9b38107
+[2024-02-06T23:19:58.248+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:58 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2024-02-06T23:19:58.704+0100] {spark_submit.py:571} INFO - 24/02/06 23:19:58 INFO SparkEnv: Registering OutputCommitCoordinator
+[2024-02-06T23:20:11.564+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:11 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2024-02-06T23:20:13.297+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:13 INFO SparkContext: Added JAR file:/home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar at spark://10.0.2.15:39901/jars/scala_2.13-0.1.0.jar with timestamp 1707257969423
+[2024-02-06T23:20:16.295+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:16 INFO Executor: Starting executor ID driver on host 10.0.2.15
+[2024-02-06T23:20:16.497+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:16 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2024-02-06T23:20:16.869+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:16 INFO Executor: Fetching spark://10.0.2.15:39901/jars/scala_2.13-0.1.0.jar with timestamp 1707257969423
+[2024-02-06T23:20:20.868+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:20 INFO TransportClientFactory: Successfully created connection to /10.0.2.15:39901 after 2423 ms (3 ms spent in bootstraps)
+[2024-02-06T23:20:21.211+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:21 INFO Utils: Fetching spark://10.0.2.15:39901/jars/scala_2.13-0.1.0.jar to /tmp/spark-91ddc325-4c39-4ae5-8eff-d5b2b2e71fdd/userFiles-6885412d-a504-43f8-bc41-e8a6c31a2985/fetchFileTemp2121383014182589924.tmp
+[2024-02-06T23:20:23.836+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:23 INFO Executor: Adding file:/tmp/spark-91ddc325-4c39-4ae5-8eff-d5b2b2e71fdd/userFiles-6885412d-a504-43f8-bc41-e8a6c31a2985/scala_2.13-0.1.0.jar to class loader
+[2024-02-06T23:20:24.690+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:24 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40759.
+[2024-02-06T23:20:24.704+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:24 INFO NettyBlockTransferService: Server created on 10.0.2.15:40759
+[2024-02-06T23:20:24.731+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:24 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2024-02-06T23:20:24.915+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.2.15, 40759, None)
+[2024-02-06T23:20:25.211+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:25 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.2.15:40759 with 434.4 MiB RAM, BlockManagerId(driver, 10.0.2.15, 40759, None)
+[2024-02-06T23:20:25.269+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:25 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.2.15, 40759, None)
+[2024-02-06T23:20:25.302+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:25 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.2.15, 40759, None)
+[2024-02-06T23:20:34.534+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:34 INFO Executor: Told to re-register on heartbeat
+[2024-02-06T23:20:34.724+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:34 INFO BlockManager: BlockManager BlockManagerId(driver, 10.0.2.15, 40759, None) re-registering with master
+[2024-02-06T23:20:34.727+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.2.15, 40759, None)
+[2024-02-06T23:20:35.205+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:34 WARN Executor: Issue communicating with driver in heartbeater
+[2024-02-06T23:20:35.209+0100] {spark_submit.py:571} INFO - org.apache.spark.SparkException: Exception thrown in awaitResult:
+[2024-02-06T23:20:35.210+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:301)
+[2024-02-06T23:20:35.210+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+[2024-02-06T23:20:35.211+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:103)
+[2024-02-06T23:20:35.211+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:87)
+[2024-02-06T23:20:35.211+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMaster.registerBlockManager(BlockManagerMaster.scala:80)
+[2024-02-06T23:20:35.212+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManager.reregister(BlockManager.scala:643)
+[2024-02-06T23:20:35.212+0100] {spark_submit.py:571} INFO - at org.apache.spark.executor.Executor.reportHeartBeat(Executor.scala:1057)
+[2024-02-06T23:20:35.212+0100] {spark_submit.py:571} INFO - at org.apache.spark.executor.Executor.$anonfun$heartbeater$1(Executor.scala:238)
+[2024-02-06T23:20:35.212+0100] {spark_submit.py:571} INFO - at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[2024-02-06T23:20:35.213+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2066)
+[2024-02-06T23:20:35.213+0100] {spark_submit.py:571} INFO - at org.apache.spark.Heartbeater$$anon$1.run(Heartbeater.scala:46)
+[2024-02-06T23:20:35.213+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+[2024-02-06T23:20:35.213+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+[2024-02-06T23:20:35.213+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+[2024-02-06T23:20:35.214+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[2024-02-06T23:20:35.214+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[2024-02-06T23:20:35.214+0100] {spark_submit.py:571} INFO - at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-02-06T23:20:35.214+0100] {spark_submit.py:571} INFO - Caused by: org.apache.spark.SparkException: Exception thrown in awaitResult:
+[2024-02-06T23:20:35.214+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:301)
+[2024-02-06T23:20:35.215+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+[2024-02-06T23:20:35.219+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+[2024-02-06T23:20:35.221+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+[2024-02-06T23:20:35.223+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:36)
+[2024-02-06T23:20:35.223+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.driverEndpoint$lzycompute(BlockManagerMasterEndpoint.scala:117)
+[2024-02-06T23:20:35.224+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.org$apache$spark$storage$BlockManagerMasterEndpoint$$driverEndpoint(BlockManagerMasterEndpoint.scala:116)
+[2024-02-06T23:20:35.224+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.isExecutorAlive$lzycompute$1(BlockManagerMasterEndpoint.scala:593)
+[2024-02-06T23:20:35.225+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.isExecutorAlive$1(BlockManagerMasterEndpoint.scala:592)
+[2024-02-06T23:20:35.225+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.org$apache$spark$storage$BlockManagerMasterEndpoint$$register(BlockManagerMasterEndpoint.scala:630)
+[2024-02-06T23:20:35.226+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint$$anonfun$receiveAndReply$1.applyOrElse(BlockManagerMasterEndpoint.scala:123)
+[2024-02-06T23:20:35.228+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:103)
+[2024-02-06T23:20:35.229+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+[2024-02-06T23:20:35.230+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+[2024-02-06T23:20:35.230+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+[2024-02-06T23:20:35.231+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+[2024-02-06T23:20:35.231+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+[2024-02-06T23:20:35.232+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[2024-02-06T23:20:35.233+0100] {spark_submit.py:571} INFO - ... 3 more
+[2024-02-06T23:20:35.233+0100] {spark_submit.py:571} INFO - Caused by: org.apache.spark.rpc.RpcEndpointNotFoundException: Cannot find endpoint: spark://CoarseGrainedScheduler@10.0.2.15:39901
+[2024-02-06T23:20:35.233+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.NettyRpcEnv.$anonfun$asyncSetupEndpointRefByURI$1(NettyRpcEnv.scala:148)
+[2024-02-06T23:20:35.234+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.NettyRpcEnv.$anonfun$asyncSetupEndpointRefByURI$1$adapted(NettyRpcEnv.scala:144)
+[2024-02-06T23:20:35.234+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+[2024-02-06T23:20:35.235+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+[2024-02-06T23:20:35.649+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[2024-02-06T23:20:35.691+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ThreadUtils$$anon$1.execute(ThreadUtils.scala:99)
+[2024-02-06T23:20:35.692+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+[2024-02-06T23:20:35.693+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+[2024-02-06T23:20:35.693+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallback(Promise.scala:316)
+[2024-02-06T23:20:35.695+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:307)
+[2024-02-06T23:20:35.696+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.transformWith(Promise.scala:40)
+[2024-02-06T23:20:35.696+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.transformWith$(Promise.scala:38)
+[2024-02-06T23:20:35.697+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.transformWith(Promise.scala:187)
+[2024-02-06T23:20:35.697+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future.flatMap(Future.scala:306)
+[2024-02-06T23:20:35.697+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future.flatMap$(Future.scala:306)
+[2024-02-06T23:20:35.698+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.flatMap(Promise.scala:187)
+[2024-02-06T23:20:35.698+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.NettyRpcEnv.asyncSetupEndpointRefByURI(NettyRpcEnv.scala:150)
+[2024-02-06T23:20:35.699+0100] {spark_submit.py:571} INFO - ... 19 more
+[2024-02-06T23:20:35.700+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:35 ERROR Inbox: Ignoring error
+[2024-02-06T23:20:35.700+0100] {spark_submit.py:571} INFO - org.apache.spark.SparkException: Exception thrown in awaitResult:
+[2024-02-06T23:20:35.701+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:301)
+[2024-02-06T23:20:35.701+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+[2024-02-06T23:20:35.702+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+[2024-02-06T23:20:35.702+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+[2024-02-06T23:20:35.703+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:36)
+[2024-02-06T23:20:35.703+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.driverEndpoint$lzycompute(BlockManagerMasterEndpoint.scala:117)
+[2024-02-06T23:20:35.704+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.org$apache$spark$storage$BlockManagerMasterEndpoint$$driverEndpoint(BlockManagerMasterEndpoint.scala:116)
+[2024-02-06T23:20:35.704+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.isExecutorAlive$lzycompute$1(BlockManagerMasterEndpoint.scala:593)
+[2024-02-06T23:20:35.705+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.isExecutorAlive$1(BlockManagerMasterEndpoint.scala:592)
+[2024-02-06T23:20:35.706+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint.org$apache$spark$storage$BlockManagerMasterEndpoint$$register(BlockManagerMasterEndpoint.scala:630)
+[2024-02-06T23:20:35.707+0100] {spark_submit.py:571} INFO - at org.apache.spark.storage.BlockManagerMasterEndpoint$$anonfun$receiveAndReply$1.applyOrElse(BlockManagerMasterEndpoint.scala:123)
+[2024-02-06T23:20:35.707+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:103)
+[2024-02-06T23:20:35.708+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+[2024-02-06T23:20:35.709+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+[2024-02-06T23:20:35.709+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+[2024-02-06T23:20:35.710+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+[2024-02-06T23:20:35.710+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+[2024-02-06T23:20:35.711+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[2024-02-06T23:20:35.711+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[2024-02-06T23:20:35.712+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[2024-02-06T23:20:35.712+0100] {spark_submit.py:571} INFO - at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-02-06T23:20:35.712+0100] {spark_submit.py:571} INFO - Caused by: org.apache.spark.rpc.RpcEndpointNotFoundException: Cannot find endpoint: spark://CoarseGrainedScheduler@10.0.2.15:39901
+[2024-02-06T23:20:35.713+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.NettyRpcEnv.$anonfun$asyncSetupEndpointRefByURI$1(NettyRpcEnv.scala:148)
+[2024-02-06T23:20:35.713+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.NettyRpcEnv.$anonfun$asyncSetupEndpointRefByURI$1$adapted(NettyRpcEnv.scala:144)
+[2024-02-06T23:20:35.714+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+[2024-02-06T23:20:35.714+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+[2024-02-06T23:20:35.715+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[2024-02-06T23:20:35.715+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ThreadUtils$$anon$1.execute(ThreadUtils.scala:99)
+[2024-02-06T23:20:35.716+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+[2024-02-06T23:20:35.716+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+[2024-02-06T23:20:35.717+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallback(Promise.scala:316)
+[2024-02-06T23:20:35.717+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:307)
+[2024-02-06T23:20:35.718+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.transformWith(Promise.scala:40)
+[2024-02-06T23:20:35.718+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.transformWith$(Promise.scala:38)
+[2024-02-06T23:20:35.718+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.transformWith(Promise.scala:187)
+[2024-02-06T23:20:35.719+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future.flatMap(Future.scala:306)
+[2024-02-06T23:20:35.719+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future.flatMap$(Future.scala:306)
+[2024-02-06T23:20:35.719+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise$DefaultPromise.flatMap(Promise.scala:187)
+[2024-02-06T23:20:35.720+0100] {spark_submit.py:571} INFO - at org.apache.spark.rpc.netty.NettyRpcEnv.asyncSetupEndpointRefByURI(NettyRpcEnv.scala:150)
+[2024-02-06T23:20:35.720+0100] {spark_submit.py:571} INFO - ... 19 more
+[2024-02-06T23:20:40.095+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:40 INFO AsyncEventQueue: Process of event SparkListenerResourceProfileAdded(Profile: id = 0, executor resources: cores -> name: cores, amount: 1, script: , vendor: ,memory -> name: memory, amount: 1024, script: , vendor: ,offHeap -> name: offHeap, amount: 0, script: , vendor: , task resources: cpus -> name: cpus, amount: 1.0) by listener HeartbeatReceiver took 1.299834372s.
+[2024-02-06T23:20:40.252+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:40 INFO AsyncEventQueue: Process of event SparkListenerResourceProfileAdded(Profile: id = 0, executor resources: cores -> name: cores, amount: 1, script: , vendor: ,memory -> name: memory, amount: 1024, script: , vendor: ,offHeap -> name: offHeap, amount: 0, script: , vendor: , task resources: cpus -> name: cpus, amount: 1.0) by listener AppStatusListener took 1.854410969s.
+[2024-02-06T23:20:50.225+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:49 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2024-02-06T23:20:51.567+0100] {spark_submit.py:571} INFO - 24/02/06 23:20:51 INFO SharedState: Warehouse path is 'file:/home/ubuntu/airflow/scala/spark-warehouse'.
+[2024-02-06T23:22:25.690+0100] {spark_submit.py:571} INFO - Exception in thread "main" org.apache.spark.sql.AnalysisException: Path does not exist: hdfs://localhost:9000/datalake/raw/match/2024-01-01.json
+[2024-02-06T23:22:25.884+0100] {spark_submit.py:571} INFO - at org.apache.spark.sql.errors.QueryCompilationErrors$.dataPathNotExistError(QueryCompilationErrors.scala:1011)
+[2024-02-06T23:22:25.905+0100] {spark_submit.py:571} INFO - at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$4(DataSource.scala:785)
+[2024-02-06T23:22:25.907+0100] {spark_submit.py:571} INFO - at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$4$adapted(DataSource.scala:782)
+[2024-02-06T23:22:25.932+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ThreadUtils$.$anonfun$parmap$2(ThreadUtils.scala:372)
+[2024-02-06T23:22:25.933+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[2024-02-06T23:22:25.935+0100] {spark_submit.py:571} INFO - at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[2024-02-06T23:22:25.936+0100] {spark_submit.py:571} INFO - at scala.util.Success.map(Try.scala:213)
+[2024-02-06T23:22:25.936+0100] {spark_submit.py:571} INFO - at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[2024-02-06T23:22:25.937+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[2024-02-06T23:22:25.949+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[2024-02-06T23:22:25.950+0100] {spark_submit.py:571} INFO - at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[2024-02-06T23:22:25.950+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
+[2024-02-06T23:22:25.962+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+[2024-02-06T23:22:25.963+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+[2024-02-06T23:22:25.964+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+[2024-02-06T23:22:25.965+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+[2024-02-06T23:22:25.965+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+[2024-02-06T23:22:29.862+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:29 INFO SparkContext: Invoking stop() from shutdown hook
+[2024-02-06T23:22:34.975+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:34 INFO SparkUI: Stopped Spark web UI at http://10.0.2.15:4040
+[2024-02-06T23:22:40.021+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:39 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2024-02-06T23:22:45.398+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:45 INFO MemoryStore: MemoryStore cleared
+[2024-02-06T23:22:45.581+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:45 INFO BlockManager: BlockManager stopped
+[2024-02-06T23:22:46.525+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:46 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2024-02-06T23:22:46.620+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:46 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2024-02-06T23:22:54.490+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:54 INFO SparkContext: Successfully stopped SparkContext
+[2024-02-06T23:22:54.634+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:54 INFO ShutdownHookManager: Shutdown hook called
+[2024-02-06T23:22:54.639+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:54 INFO ShutdownHookManager: Deleting directory /tmp/spark-490e4e27-fe1d-4d37-9bae-8429efda4125
+[2024-02-06T23:22:58.049+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:57 WARN ShutdownHookManager: ShutdownHook '' timeout, java.util.concurrent.TimeoutException
+[2024-02-06T23:22:58.156+0100] {spark_submit.py:571} INFO - java.util.concurrent.TimeoutException
+[2024-02-06T23:22:58.157+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+[2024-02-06T23:22:58.158+0100] {spark_submit.py:571} INFO - at org.apache.hadoop.util.ShutdownHookManager.executeShutdown(ShutdownHookManager.java:124)
+[2024-02-06T23:22:58.158+0100] {spark_submit.py:571} INFO - at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:95)
+[2024-02-06T23:22:58.213+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:58 WARN JavaUtils: Attempt to delete using native Unix OS command failed for path = /tmp/spark-490e4e27-fe1d-4d37-9bae-8429efda4125. Falling back to Java IO way
+[2024-02-06T23:22:58.214+0100] {spark_submit.py:571} INFO - java.io.IOException: Failed to delete: /tmp/spark-490e4e27-fe1d-4d37-9bae-8429efda4125
+[2024-02-06T23:22:58.214+0100] {spark_submit.py:571} INFO - at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingUnixNative(JavaUtils.java:163)
+[2024-02-06T23:22:58.215+0100] {spark_submit.py:571} INFO - at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:110)
+[2024-02-06T23:22:58.219+0100] {spark_submit.py:571} INFO - at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:91)
+[2024-02-06T23:22:58.220+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1206)
+[2024-02-06T23:22:58.220+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65)
+[2024-02-06T23:22:58.221+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62)
+[2024-02-06T23:22:58.221+0100] {spark_submit.py:571} INFO - at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+[2024-02-06T23:22:58.222+0100] {spark_submit.py:571} INFO - at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+[2024-02-06T23:22:58.222+0100] {spark_submit.py:571} INFO - at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+[2024-02-06T23:22:58.223+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62)
+[2024-02-06T23:22:58.241+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+[2024-02-06T23:22:58.242+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+[2024-02-06T23:22:58.242+0100] {spark_submit.py:571} INFO - at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[2024-02-06T23:22:58.270+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2066)
+[2024-02-06T23:22:58.271+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+[2024-02-06T23:22:58.272+0100] {spark_submit.py:571} INFO - at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[2024-02-06T23:22:58.275+0100] {spark_submit.py:571} INFO - at scala.util.Try$.apply(Try.scala:213)
+[2024-02-06T23:22:58.280+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+[2024-02-06T23:22:58.281+0100] {spark_submit.py:571} INFO - at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+[2024-02-06T23:22:58.293+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+[2024-02-06T23:22:58.293+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[2024-02-06T23:22:58.293+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[2024-02-06T23:22:58.294+0100] {spark_submit.py:571} INFO - at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[2024-02-06T23:22:58.294+0100] {spark_submit.py:571} INFO - at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-02-06T23:22:58.295+0100] {spark_submit.py:571} INFO - Caused by: java.lang.InterruptedException
+[2024-02-06T23:22:58.295+0100] {spark_submit.py:571} INFO - at java.base/java.lang.Object.wait(Native Method)
+[2024-02-06T23:22:58.295+0100] {spark_submit.py:571} INFO - at java.base/java.lang.Object.wait(Object.java:328)
+[2024-02-06T23:22:58.296+0100] {spark_submit.py:571} INFO - at java.base/java.lang.ProcessImpl.waitFor(ProcessImpl.java:495)
+[2024-02-06T23:22:58.298+0100] {spark_submit.py:571} INFO - at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingUnixNative(JavaUtils.java:161)
+[2024-02-06T23:22:58.299+0100] {spark_submit.py:571} INFO - ... 23 more
+[2024-02-06T23:22:58.446+0100] {spark_submit.py:571} INFO - 24/02/06 23:22:58 INFO ShutdownHookManager: Deleting directory /tmp/spark-91ddc325-4c39-4ae5-8eff-d5b2b2e71fdd
+[2024-02-06T23:23:09.036+0100] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 174, in execute
+    self._hook.submit(self._application)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 502, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master local[*] --conf spark.airflow.execution_date=2024-01-01 --name arrow-spark --class FormattedData --queue root.default --deploy-mode client /home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar. Error code is: 1.
+[2024-02-06T23:23:09.119+0100] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Competition_dag, task_id=cleanMatch_task, execution_date=20240101T000000, start_date=20240206T221842, end_date=20240206T222309
+[2024-02-06T23:23:09.314+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 40 for task cleanMatch_task (Cannot execute: spark-submit --master local[*] --conf spark.airflow.execution_date=2024-01-01 --name arrow-spark --class FormattedData --queue root.default --deploy-mode client /home/ubuntu/airflow/scala/target/scala-2.13/scala_2.13-0.1.0.jar. Error code is: 1.; 67167)
+[2024-02-06T23:23:09.352+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-06T23:23:09.505+0100] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
